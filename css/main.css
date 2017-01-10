@@ -5,17 +5,17 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font-family: Georgia;
+  font-family: Georgia, serif;
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -43,33 +43,33 @@ a {
   color: #fff;
 }
 
-
 @media only screen and (min-width: 38em) {
 
   .btn {
     float: right;
-    margin-top: 5rem;
+    margin-top: 8rem;
   }
-
 }
 
 @media only screen and (min-width: 60em) {
 
-  .banner{
+  .banner {
     position: relative;
     max-height: 500px;
     overflow: hidden;
   }
 
-  .banner-content {
-    position: absolute;
-    bottom: 0;
-    left:0;
+  h1 {
+    margin-bottom: 0;
   }
 
   .banner-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     background-color: transparent;
     background-image: linear-gradient(to bottom, transparent, rgba(73, 85, 98, .9));
+    width: 100%;
   }
 
   .btn {
@@ -80,10 +80,8 @@ a {
     border-color: #efefef;
     background-color: #efefef;
   }
-}
 
-@media only screen and (min-width: 80em) {
-
-  h1 {
-    margin-top: 5rem;
+  .banner-text {
+    margin-top: 2rem;
   }
+}
